@@ -1,2 +1,2 @@
-# b-love
+# B-love Web Client
 Blove is an adult platform. I'll give more information later

@@ -1,0 +1,4 @@
+.modal[name="publication"] .box .body{
+   display: flex;
+   background-color: var(--color-white);
+}

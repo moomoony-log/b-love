@@ -1,0 +1,57 @@
+.modal[name="confirm"] .box .body{
+   display: flex;
+   background-color: var(--color-white);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.modal[name="confirm"] .box .body::after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    position: absolute;
+    animation: Online2 1s ease-in-out infinite;
+}
+.modal[name="confirm"] .box .body .icon{
+    height: 75px;
+    width: 75px;
+    font-size: 50px;
+    line-height: 75px;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+.modal[name="confirm"] .box .body .title{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.modal[name="confirm"] .box .body .confirm-text{
+    font-weight: lighter;
+}
+
+.modal[name="confirm"] .box .body[type="exit"]::after{
+    background-color: rgba(255, 17, 17, 0.066);
+}
+.modal[name="confirm"] .box .body[type="exit"] .icon{
+    box-shadow: 0 0 7px -4px var(--color-red-hard);
+    background-color: var(--color-red-lite);
+    color: var(--color-red-soft);
+}
+.modal[name="confirm"] .box .body[type="exit"] .title{
+    color: var(--color-red-soft);
+}
+
+.modal[name="confirm"] .box .body[type="good"]::after{
+    background-color: rgba(17, 184, 255, 0.077);
+}
+.modal[name="confirm"] .box .body[type="good"] .icon{
+    box-shadow: 0 0 7px -4px var(--color-blue-hard);
+    background-color: var(--color-blue-lite);
+    color: var(--color-blue-soft);
+}
+.modal[name="confirm"] .box .body[type="good"] .title{
+    color: var(--color-blue-soft);
+}

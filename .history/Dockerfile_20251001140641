@@ -1,0 +1,17 @@
+#DockerFile for B-Love-Web-Client
+FROM node:22-alpine
+
+WORKDIR /app
+
+RUN npm install -g pnpm
+
+COPY package*.js ./
+
+RUN pnpm install
+
+COPY . .
+
+EXPOSE 9090
+
+CMD [ "pnpm", "run", "dev", "--", "--host", "0.0.0.0", "--port", "9090"]
+

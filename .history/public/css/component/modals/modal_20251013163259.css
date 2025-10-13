@@ -1,0 +1,81 @@
+/* @import url('./modals/registration.css'); */
+@import url('./publication.css');
+@import url('./confirm.css');
+
+#modals .modal{
+    position: fixed;
+    display: none;
+    align-items: center;
+    left: 0;
+    top: 0;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    background-color: #262f4ae8;
+    z-index: 1000;
+    transition: opacity .6s ease-in-out;
+    animation: show-modal .5s ease-in-out;
+ }
+.modal .box{
+    background-color:var(--color-gray-soft);
+    min-width: 300px;
+    max-width: 1300px;
+    min-height: 270px;
+    box-shadow: 0 0 5px 0px #263b80;
+    padding: 10px;
+    border-radius: 15px;
+    opacity: 1;
+    transform: scale(.9);
+    flex-direction: column;
+    gap: 10px;
+    animation: show-box .6s ease-in-out forwards; 
+}
+
+.modal:active .box{
+    animation: show-box .6s ease-in-out forwards, show-cont .1s ease-in-out;
+}
+ /* Animation > Affichage > Masquage */
+.modal[data-show]{
+   display: flex !important;
+}
+.modal[data-show] .box{
+   display: flex !important;
+}
+.modal[hide]{
+   opacity: 0;
+}
+.modal[hide] .box{
+    animation: hide-box .5s ease-in-out forwards;
+}
+.modal .box .modal-head{
+   height: 30px;
+   display: flex;
+   padding: 0 5px;
+   justify-content: space-between;
+   align-items: center;
+} 
+.box .modal-head .title i{
+   height: 25px;
+   width: 25px;
+   line-height: 25px;
+   text-align: center;
+   border-radius: 5px;
+   color: var(--color-white);
+   background-color: var(--color-gray-hard-1);
+}
+.box .modal-head .exit i{
+   color: var(--color-red-hard);
+   cursor: pointer;
+}
+.modal .box .body{
+   min-height: 200px;
+   border-radius: 10px;
+   padding: 5px;
+}
+.modal .box .controler{
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+ }
+
+

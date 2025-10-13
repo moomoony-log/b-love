@@ -1,0 +1,12 @@
+/* cool-scroll-bar */
+.cool-scroll-bar::-webkit-scrollbar{
+    width: 3px;
+    height: 3px;
+    border-radius: 50px !important;
+    background-color: var(--color-gray-soft);
+    box-shadow: 0 0 5px var(--color-gray-soft);
+}
+.cool-scroll-bar::-webkit-scrollbar-thumb{
+    background-color: var(--color-gray-medium);
+    border-radius: 50px !important;
+}

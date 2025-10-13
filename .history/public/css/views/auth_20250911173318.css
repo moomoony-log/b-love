@@ -1,0 +1,257 @@
+/* --> CSS de la rubrique d'authentification */
+#index #main-container{
+   background-image: url('../../img/girl_illustration.png');
+   position: relative;
+    background-repeat: repeat; 
+   background-size: 560px;
+   /* padding: 10px; */
+}
+#index #main-container::after{
+   content: '';
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   background-color: var(--color-white);
+   z-index: 1; 
+   opacity: 0.9;
+}
+#auth{
+   display: flex;
+   flex-direction: column;
+   /* background-color:var(--color-gray-hard-3); */
+   max-width: 1000px;
+   width: 100%;
+   height: 100%;
+   padding: 10px;
+   align-items: center;
+   justify-content: center; 
+   border-radius: 10px;
+   gap: 10px;
+   z-index: 5;
+   /* box-shadow: 0 0 7px -2px var(--color-gray-hard-1); */
+}
+#auth .head{
+   width: 100%;
+   height: 48px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+.head .img{
+   width: 96px;
+   height: 40px;  
+}
+#auth  .head .ui-btn{
+  background-color: inherit;
+}
+#auth .auth-container{
+   display: flex;
+   gap: 10px;
+   justify-content: center;
+}
+.auth-container .rule-present{
+   padding: 10px; 
+   max-height: 400px;
+   justify-content: space-between;
+   align-items: center;
+   flex-direction: column;
+   overflow: auto;
+   width: 85%;
+   display: flex;
+ }
+.auth-container .rule-present .rules-cont{
+   display: flex;
+   gap: 10px;
+}
+.rule-present .rules-cont a{
+   color: var(--color-gray-hard-1);
+}
+.auth-container .rule-present p{
+   color: var(--color-gray-hard-1);
+   /* background-color: white; */
+   padding: 3px;
+   border-radius: 10px;
+   text-align: center;
+}
+ .auth-container .auth-input{
+   /* width: 600px !important; */
+   background-color: white;
+   padding: 20px;
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+.auth-input .volet-container {
+   width: 100%;
+}
+.auth-input .volet-container > *,
+.auth-input .volet-container form > * {
+   width: 100%;
+}
+.PhoneInputCountry{
+   padding: 5px;
+}
+
+ /* --> Conteneur des inputs de connexion */
+.volet-container .container{
+   display: flex;
+   width: 100%;
+   gap: 10px;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.container .regist{
+   border-top: 1px solid var(--color-gray-hard);
+   text-wrap: nowrap;
+   padding-top: 15px;
+   font-size: 12px;
+   display: flex;
+   width: 235px;
+   flex-direction: column;
+   gap: 10px;
+   align-items: center;
+   justify-content: center;
+   position: relative;
+}
+.container .regist button{
+   font-size: 13px;
+   width: 100%;
+   text-align: left;
+}
+.container .regist::before{
+   content: 'OU';
+   border-radius: 5px;
+   position: absolute;
+   top: -10px;
+   outline: 5px solid white;
+   width: 20px;
+   background-color: var(--color-gray-hard-1);
+   color: white;
+   padding: 2px;
+}
+.auth-input p{
+   position: relative;
+   font-size: 18px;
+   text-align: center;
+   width: 100%;
+   margin-bottom: 35px;
+}
+.auth-input p::after{
+   content: 'B-Love connexion';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+}
+.auth-input p[data-name="connect"]::after{
+   content: 'B-Love connexion';
+}
+.auth-input p[data-name="new-account"]::after{
+   content: 'B-Love nouveau compte';
+}
+.auth-input p[data-name="forget-password"]::after{
+   content: 'B-Love récuperation de compte';
+}
+.auth-input .log-title{
+   position: relative;
+   background-color: var(--color-gray-hard-3);
+   padding: 10px;
+   width: 251px;
+   font-size: 13px;
+   text-align: center;
+   border-radius: 10px;
+   font-weight: lighter;
+}
+ .auth-input .log-title::before{
+   content: '';
+   background-color: var(--color-gray-hard);
+   color: white;
+   border-radius: 5px;
+   padding: 0;
+   text-align: center;
+   height: 20px;
+   width: 22px;
+   position: absolute;
+   left: 44%;
+   top: -11px;
+   outline: 2px solid white;
+}
+.auth-input .log-title i{
+   color: white;
+   border-radius: 5px;
+   position: absolute;
+   left: 115px;
+   top: -7px;
+}
+.auth-input form{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 10px;
+}
+ /* --> Btn des input de connexion */
+ .auth-input .input-btn-container{
+   display: flex;
+   /* width: 290px; */
+   align-items: center;
+   justify-content: space-between;
+   color: var(--color-gray-hard);
+   margin-bottom: 15px;
+}
+.container[data-name="new-account"] >*,
+.container[data-name="forget-password"] >* {
+   width: 100%; 
+ }
+
+.container[data-name="new-account"] .input-btn-container{
+   text-align: left;
+}
+.container[data-name="otp"] .input-btn-container{
+  justify-content: flex-end;
+}
+.container[data-name="otp"]{
+   gap: 20px;
+}
+#auth .input-btn-container[data-name="btn-confidentiality"]{
+   display: none;
+}
+/* --> Gestion de l'affchage sur mobile */
+@media screen and (max-width: 760px){
+   .auth-container .rule-present{
+      display: none;
+   } 
+   #auth .input-btn-container[data-name="btn-confidentiality"]{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+   }
+   #auth .input-btn-container[data-name="btn-confidentiality"] .ui-btn{
+      background-color: inherit;
+   }
+}
+@media screen and (max-width: 370px){
+   /* #auth .head{
+      height: 35px;
+  } */
+  #auth .head img{
+      height: 35px;
+  }
+  /* #auth .ui-btn{
+      font-size: 10px;
+  } */
+  /* .auth-input p {
+      font-size: 14px;
+  } */
+  /* .volet-container .log-title{
+      font-size: 10px;
+  } */
+   
+} 
+

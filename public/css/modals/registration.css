@@ -1,0 +1,83 @@
+.modal[name="registration" ] .box{
+   display: flex;
+   flex-direction: column;
+   /* justify-content: space-between; */
+   align-items: center;
+   gap: 20px;
+   /* width: 270px; */
+   overflow: hidden;   
+} 
+ .entete{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.entete i{
+    font-size: 20px;
+    cursor: pointer;
+}
+.btn-box{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+   gap: 10px;
+}
+.modal[name="registration" ] .box button{
+    width: 100%;
+    text-align: left !important;
+}
+.modal[name="registration" ] .box .number button{
+    width: auto;
+    text-align: left !important;
+}
+.modal[name="registration" ] .box p{
+  font-size: 14px;
+  text-align: right;
+  color: var(--color-gray-hard);
+}
+.modal[name="registration" ] .box  img{
+
+ height: 50px;
+  }
+  .modal[name="registration" ] .box  .im{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .modal[name="registration" ] .box  .rules{
+    text-align: center;
+  font-size: 10px;
+   }
+.btn-box i{
+    font-size: 20px;
+}
+
+.change{
+    display: flex;
+    /* background-color: red; */
+    width: 100%;
+    justify-content: space-between !important;
+    gap: 10px;
+}
+.number{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.number .ui-input{
+    width: 100%;
+    font-size: 17px;
+}
+.number .passwdforget{
+    text-align: left ;
+    cursor: pointer;
+    position: relative;
+    left: 80px;
+
+    text-decoration: underline;
+    font-size: 11.5px !important;
+}

@@ -1,0 +1,30 @@
+#notification{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    height: 100%;background-color: rgba(255, 255, 255, 0.744);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+#notification[show]{
+    display: none;
+}
+#notification img{
+    width: 95px;
+    height: 50px;
+}
+#notification i{
+    font-size: 20px;
+    color: white;
+}
+#notification .i{
+   background-color: var(--color-gray-hard-1);
+   padding: 7px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border-radius: 5px;
+}

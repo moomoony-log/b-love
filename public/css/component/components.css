@@ -1,0 +1,17 @@
+ /* Imporation des dependances */
+ @import url('input.css');
+ @import url('button.css');
+ @import url('img.css');
+ @import url('notification.css');
+ @import url('loader.css');
+ @import url('table.css');
+ @import url('./modals/modal.css');
+
+ @keyframes text{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+ }

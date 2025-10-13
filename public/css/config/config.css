@@ -1,0 +1,51 @@
+/* Style global de configuration */
+
+/* Police d'ecriture */
+/* Cera */
+@font-face{
+    font-family: 'Cera';
+    src: url('../../font/cera-round-pro/CeraRoundPro-Bold.otf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Cera';
+    src: url('../../font/cera-round-pro/CeraRoundPro-Regular.otf');
+    font-weight: normal;
+}
+
+/* body{
+    display: flex !important;
+    padding: 5px;
+    height: 100%;
+    width: 100%; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden; 
+} */
+body *{
+    box-sizing: border-box;
+    font-family: 'Cera', sans-serif;
+    font-weight: bold;
+}
+
+button:focus, input:focus, textarea:focus, select:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+}
+
+h1, h2, h3, h4, h5, p {
+    color: inherit;
+    margin: 0;
+    padding: 0;
+    text-decoration: inherit;
+}
+
+img{
+    height: inherit;
+    max-width: 100%;
+}

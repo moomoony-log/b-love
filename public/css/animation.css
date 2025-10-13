@@ -1,0 +1,46 @@
+@keyframes reotateInner {
+    from {
+       transform: rotate(0);
+    }
+    to{
+       transform: rotate(180deg);
+    }
+ }
+ @keyframes Online {
+    0%, 100% {
+       transform: scale(1.5);
+       opacity: 1;
+
+    }
+    50% {
+       transform: scale(0.5);
+       /* opacity: 0.5; */
+    }
+ }
+  @keyframes Online2 {
+    0%, 100% {
+       opacity: 1;
+
+    }
+    50% {
+       opacity: 0.5;
+    }
+ }
+ @keyframes spin {
+   0%{
+      transform: rotate(0deg);
+   }
+   100%{
+      transform: rotate(360deg);
+   }
+   
+ }
+  @keyframes opa {
+   0%{
+      opacity: .4;
+   }
+   100%{
+      opacity: 1;
+   }
+   
+ }

@@ -1,0 +1,27 @@
+.modal[data-name="publication"] .box .body{
+   display: flex;
+   background-color: var(--color-white);
+   flex-direction: column;
+}
+
+.modal[data-name="publication"] .publication-text{
+   /* background-color: red; */
+}
+.modal[data-name="publication"] .publication-text textarea{
+   width: 100%;
+   border-radius: 10px;
+   padding: 5px;
+   font-size: 16px;
+   text-align: left;
+   color: #e71010a6;
+}
+.modal[data-name="publication"] .publication-text textarea::placeholder{
+   color: rgba(144, 142, 142, 0.603) !important;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.modal[data-name="publication"] .input input{
+   background-color: red;
+   z-index: 50;
+   display: none;
+}

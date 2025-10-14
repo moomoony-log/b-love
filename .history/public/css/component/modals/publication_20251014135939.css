@@ -1,0 +1,94 @@
+.modal[data-name="publication"] .box .body{
+   display: flex;
+   background-color: var(--color-white);
+   flex-direction: column;
+   gap: 10px;
+}
+
+.modal[data-name="publication"] .publication-text{
+   /* background-color: red; */
+   max-height: 500px !important;
+   display: flex;
+}
+.modal[data-name="publication"] .publication-text textarea{
+   width: 100%;
+   border-radius: 10px;
+   border: none;
+   padding: 5px;
+   font-size: 18px;
+   text-align: left;
+   color: var(--color-gray-hard-1) !important;
+   max-height: 200px;
+   min-height: 180px; 
+   box-sizing: border-box;
+   font-weight: 500;
+   line-height: 1.4;
+   scrollbar-width: none;
+}
+.modal[data-name="publication"] .publication-text textarea::placeholder{
+   color: rgba(144, 142, 142, 0.603) !important;
+   font-weight: lighter;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.modal[data-name="publication"] .files{
+   border: 1px dashed var(--color-gray-hard-1);
+   padding: 10px;
+   border-radius: 10px;
+   height: 50px;
+   display: flex;
+   color: var(--color-gray-hard-3);
+   align-items: center;
+}
+.modal[data-name="publication"] .files label{
+   color: var(--color-gray-hard-1);
+   align-items: center;
+   gap: 10px;
+   display: flex;
+}
+.modal[data-name="publication"] .files label i{
+   font-size: 25px;
+}
+.modal[data-name="publication"] .files input{
+   background-color: red;
+   display: none;
+}
+.modal[data-name="publication"] .medias-parameter{
+   display: flex;
+   flex-direction: column;
+   background-color: var(--color-gray-hard-3);
+   flex-wrap: nowrap;
+   max-width: 400px;
+   border-radius: 10px;
+}
+.modal[data-name="publication"] .medias-parameter .img-container{
+   display: flex;
+   gap: 10px;
+   padding: 10px;
+   overflow-y: hidden;
+   overflow-x: auto;
+   scrollbar-width: none;
+}
+.modal[data-name="publication"] .medias-parameter .parameter {
+   /* background-color: red; */
+   display: flex;
+   align-items: center;
+   height: 35px;
+   padding: 10px;
+   gap: 10px;
+} 
+.medias-parameter .parameter span:nth-child(2),
+.medias-parameter .parameter span:nth-child(3){
+   height: 25px;
+   background-color: rgb(143, 138, 138);
+   /* width: 25px; */
+   color: white;
+   padding: 0 10px;
+   line-height: 25px;
+   text-align:center;
+   border-radius: 5px;
+}
+.medias-parameter .parameter span[data-active]:nth-child(2),
+.medias-parameter .parameter span[data-active]:nth-child(3){
+   color: var(--color-gray-hard-1);
+   background-color: white;
+}

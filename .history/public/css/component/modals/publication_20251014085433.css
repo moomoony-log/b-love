@@ -1,0 +1,17 @@
+.modal[data-name="publication"] .box .body{
+   display: flex;
+   background-color: var(--color-white);
+   flex-direction: column;
+}
+
+.modal[data-name="publication"] .publication-text{
+   background-color: red;
+   
+
+}
+
+.modal[data-name="publication"] .input input{
+   background-color: red;
+   z-index: 50;
+   display: none;
+}

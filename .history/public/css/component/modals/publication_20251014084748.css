@@ -1,0 +1,16 @@
+.modal[data-name="publication"] .box .body{
+   display: flex;
+   background-color: var(--color-white);
+}
+
+.modal[data-name="publication"] .ui-input[data-="publication-text"] {
+
+}
+
+.modal[data-name="publication"] .input input{
+   background-color: red;
+   z-index: 50;
+}
+.modal[data-name="publication"] .input label{
+   position: absolute;
+}

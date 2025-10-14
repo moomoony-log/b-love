@@ -1,0 +1,59 @@
+.modal[data-name="publication"] .box .body{
+   display: flex;
+   background-color: var(--color-white);
+   flex-direction: column;
+   gap: 10px;
+}
+
+.modal[data-name="publication"] .publication-text{
+   /* background-color: red; */
+   max-height: 500px !important;
+   display: flex;
+}
+.modal[data-name="publication"] .publication-text textarea{
+   width: 100%;
+   border-radius: 10px;
+   border: none;
+   padding: 5px;
+   font-size: 18px;
+   text-align: left;
+   color: rgb(124, 123, 123) !important;
+   max-height: 200px;
+   min-height: 40px; 
+   box-sizing: border-box;
+   line-height: 1.4;
+   scrollbar-width: none;
+}
+.modal[data-name="publication"] .publication-text textarea::placeholder{
+   color: rgba(144, 142, 142, 0.603) !important;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.modal[data-name="publication"] .files{
+   border: 1px dashed var(--color-gray-hard-1);
+   padding: 10px;
+   border-radius: 10px;
+   height: 50px;
+   display: flex;
+   color: var(--color-gray-hard-3);
+   align-items: center;
+}
+.modal[data-name="publication"] .files label{
+   color: var(--color-gray-hard-1);
+}
+.modal[data-name="publication"] .files input{
+   background-color: red;
+   display: none;
+}
+.modal[data-name="publication"] .medias-parameter{
+   display: flex;
+   flex-direction: column;
+   background-color: blue;
+   /* flex-wrap: nowrap; */
+   overflow-y: auto;
+   max-width: 400px;
+}
+.modal[data-name="publication"] .medias-parameter .img-container{
+   display: flex;
+   gap: 10px;
+   padding: 10px;
+} 

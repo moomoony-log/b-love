@@ -1,0 +1,8 @@
+.modal[name="publication"] .box .body{
+   display: flex;
+   background-color: var(--color-white);
+}
+
+.modal[name="publication"] .ui-input[data-="publication-text"] {
+   
+}

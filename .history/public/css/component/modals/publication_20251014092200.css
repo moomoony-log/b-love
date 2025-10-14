@@ -1,0 +1,34 @@
+.modal[data-name="publication"] .box .body{
+   display: flex;
+   background-color: var(--color-white);
+   flex-direction: column;
+   gap: 10px;
+}
+
+.modal[data-name="publication"] .publication-text{
+   /* background-color: red; */
+   max-height: 500px !important;
+}
+.modal[data-name="publication"] .publication-text textarea{
+   width: 100%;
+   border-radius: 10px;
+   border: none;
+   padding: 5px;
+   font-size: 18px;
+   text-align: left;
+   color: rgb(124, 123, 123) !important;
+   height: 500px;
+}
+.modal[data-name="publication"] .publication-text textarea::placeholder{
+   color: rgba(144, 142, 142, 0.603) !important;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.modal[data-name="publication"] .files{
+   border: 1px dashed red;
+   padding: 10px;
+}
+.modal[data-name="publication"] .files input{
+   background-color: red;
+   z-index: 50;
+   display: none;
+}

@@ -1,0 +1,31 @@
+
+.modal[data-name="pub-item"] .box{
+    max-width: 700px;
+}
+.modal[data-name="pub-item"] .title{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.modal[data-name="pub-item"] .body .medias-cont{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.modal[data-name="pub-item"] .body .about-pub{
+    width: 100%;
+    max-height: 100px;
+    background-color: red;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.modal[data-name="pub-item"] .title .identity{
+    display: flex;
+    flex-direction: column;
+}
+.modal[data-name="pub-item"] .title .identity span{
+    font-size: 14px;
+}
+.modal[data-name="pub-item"] .title .identity span:last-child{
+    font-weight: lighter;
+}

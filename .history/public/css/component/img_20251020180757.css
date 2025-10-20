@@ -1,0 +1,200 @@
+/* ---> CSS DES COMPOSANTS IMAGES */
+.cont-account-img{
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.cont-account-img[data-name="account"]{
+    height: 40px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+.cont-account-img[data-name="pub"]{
+    height: 40px;
+    width: 50px;
+    border-radius: 50%;
+
+}
+/* image compte publication */
+.cont-account-img[data-name="my-post"]{ 
+    width: 65px;
+    height: 65px;
+    border-radius: 5px;
+}
+
+/* image compte publication */
+.cont-account-img[data-name="pub-2"]{
+    min-width: 35px;
+    max-width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.cont-account-img[data-name="like"]{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+}
+.cont-account-img[data-name="product"]{
+    /* width: 100px; */
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.cont-account-img[data-name="info-account"]{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+}
+.cont-account-img[data-name="pub-item"]{
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+}
+.cont-account-img[data-name="pub-item-img"]{
+    height: 100%;
+    min-width: 300px;
+    border-radius: 5px;
+}
+.cont-account-img[data-name="pub-item-img"] img{
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+}
+.cont-account-img[data-name="pub-item-img"] {
+    user-select: text;
+    cursor: move;
+}
+.cont-account-img[data-name="publication"]{
+    height: 130px;
+    min-width: 100px;
+    border-radius: 10px !important;
+    position: relative;
+}
+.cont-account-img[data-name="publication"] img{
+    cursor: move;
+}
+.cont-account-img[data-name="publication"]::after{
+    content: '\f00d';
+    position: absolute;
+    background-color: red;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    top: 2px;
+    font-family: 'Font Awesome 6 Pro';
+    right: 2px;
+
+}
+.cont-account-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    display: block;
+}
+.cont-account-img video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    display: block;
+}
+/* Image du logo */
+.logo-content img{
+    height: 40px; 
+}
+.marketing-img{
+    width: 50%;
+    height: 100%;
+}
+#app-content-right .head .logo-content img{
+    height: 35px;  
+}
+.container-my-pub .item-pub img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* Image de publié */
+/* Grille d'images style Facebook */
+
+.pub-content .medias-body .cont-account-img{
+    border-radius: 0px;
+    min-width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.pub-content .medias-body::before{
+    content: '\f061';
+    font-size: 14px;
+    background-color: white;
+    position: absolute;
+    font-family: 'Font Awesome 6 Pro';
+    color: var(--color-gray-hard-1);
+    height: 25px;
+    width: 25px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 25px;
+    right: 15px;
+    top: 45%;
+    z-index: 40;
+}
+.pub-content .medias-body::after{
+    content: '\f060';
+    font-family: 'Font Awesome 6 Pro';
+    font-size: 14px;
+    background-color: white;
+    position: absolute;
+    color: var(--color-gray-hard-1);
+    height: 25px;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 25px;
+    left: 15px;
+    top: 45%;
+    z-index: 40;
+}
+.pub-content .medias-body .cont-account-img img{
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain; /* conserve le ratio */
+}
+ .pub-content .medias-body .cont-account-img  iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+  .container-my-pub .item-pub video{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: black;
+}
+/* 
+.pub-content {
+    width: 100%;
+} */
+
+/* .pub-content .cont-account-img:hover img {
+    transform: scale(1.03);
+}  */

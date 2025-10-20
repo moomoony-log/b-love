@@ -1,0 +1,9 @@
+.modal[data-name="pub-item"] .title{
+    background-color: red;
+    display: flex;
+
+}
+.modal[data-name="pub-item"] .title .identity{
+    display: flex;
+    flex-direction: column;
+}

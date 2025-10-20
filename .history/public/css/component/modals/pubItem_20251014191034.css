@@ -1,0 +1,5 @@
+.modal[data-name="pub-item"] .title{
+    background-color: red;
+    display: flex;
+
+}

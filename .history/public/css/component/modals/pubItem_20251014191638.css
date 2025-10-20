@@ -1,0 +1,10 @@
+.modal[data-name="pub-item"] .title{
+    background-color: red;
+    display: flex;
+    gap: 10px;
+
+}
+.modal[data-name="pub-item"] .title .identity{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,66 @@
+
+.modal[data-name="pub-item"] .box{
+    max-width: 700px;
+}
+.modal[data-name="pub-item"] .title{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.modal[data-name="pub-item"] .body .medias-cont{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: auto;
+    gap: 5px;
+    height: 285px;
+}
+.modal[data-name="pub-item"] .body{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.modal[data-name="pub-item"] .body .about-pub{
+    width: 100%;
+    max-height: 100px;
+    font-size: 14px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+}
+.modal[data-name="pub-item"] .body .about-pub[data-data]{
+    -webkit-line-clamp: initial; 
+    -webkit-box-orient: initial;
+    line-clamp: initial;
+
+}
+.modal[data-name="pub-item"] .body .pub-info{
+    display: flex;
+    background-color: red;
+}
+.body .pub-info .one{
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+}
+.body .pub-info .one .like{
+    background-color: rgb(182, 118, 241);
+    color: white;
+    height: 20px;
+    border-radius: 10px;
+    padding: 0 10px;
+    line-height: 20px;
+}
+.modal[data-name="pub-item"] .title .identity{
+    display: flex;
+    gap: 3px;
+    flex-direction: column;
+}
+.modal[data-name="pub-item"] .title .identity span{
+    font-size: 14px;
+}
+.modal[data-name="pub-item"] .title .identity span:last-child{
+    font-weight: lighter;
+    font-size: 12px;
+}
